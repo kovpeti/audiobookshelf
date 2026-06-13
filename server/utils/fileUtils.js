@@ -199,7 +199,7 @@ module.exports.recurseFiles = async (path, relPathToReplace = null) => {
     ignoreFolders: true,
     extensions: true,
     deep: true,
-    realPath: true,
+    realPath: false,
     normalizePath: false
   }
   let list = await rra.list(path, options)
