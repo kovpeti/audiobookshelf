@@ -1,6 +1,8 @@
 ---
 name: Build and Push Docker Image
-
+permissions:
+  contents: read
+  packages: write  # This is critical for creating the package   
 on:
   # Allows you to run workflow manually from Actions tab
   workflow_dispatch:
